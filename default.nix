@@ -1,4 +1,5 @@
-{ nixpkgs ? <nixpkgs>
+{ sources ? import ./nix/sources.nix
+, nixpkgs ? sources.nixpkgs
 , pkgs ? import nixpkgs {}
 }:
 

@@ -24,6 +24,8 @@ stdenv.mkDerivation rec {
     description = "Stand-alone Audio-over-IP solution";
     homepage = "https://studio-link.de/";
     platforms = [ "x86_64-linux" ];
-    license = licenses.unfree;
+
+    # TODO How can we set this and still build with Hercules CI?
+    #license = licenses.unfree;
   };
 }
