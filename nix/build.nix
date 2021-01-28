@@ -2,11 +2,11 @@
 
 stdenv.mkDerivation rec {
   pname = "studio-link";
-  version = "v20.05.0";
+  version = "v20.12.1";
 
   src = fetchurl {
     url = "https://download.studio.link/releases/${version}-stable/linux/studio-link-standalone-${version}.tar.gz";
-    sha256 = "1x0ihasmvc1dbl5n7q8v1rzzk8fd0s60pk5av49fk03pymdlf4yq";
+    sha256 = "1sid09z31mqyqj37kcg1nvhgf0azkb9a4dq9fw19sqca98w5dpcg";
   };
 
   buildInputs = [ zlib libpulseaudio alsaLib ];
